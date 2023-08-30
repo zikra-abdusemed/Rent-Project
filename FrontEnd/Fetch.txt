@@ -1,0 +1,16 @@
+fetch('http://localhost:5000/users',{
+    method: 'POST',
+    headers: {
+        'content-Type':'application/json'
+    },
+    body:JSON.stringify({
+        firstname:'Eyob'
+        
+
+    })
+})
+    
+.then(res => {
+    return res.text()})
+.then(data => console.log(data))
+.catch(error => console.log('ERROR'))
