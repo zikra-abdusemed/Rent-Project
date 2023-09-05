@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Media | Nodejs</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>File Upload</title>
+    </head>
+
+    <body>
+        <h1>File Upload</h1>
+        <!-- action="/upload" method="post"  enctype="multipart/form-data" -->
+        <form>
+            <div>
+                <!-- <label for="file"> upload image of the house </label>
+                <input type="file" class="image"> -->
+            </div>
+            <br><br>
+            <div>
+                <label for="city">city</label>
+                <select class="labeldropdown" required>
+                    <option value="Addisabeba">Addis Abeba</option>
+                    <option value="Adama">Adama</option>
+                    <option value="Bishoftu">Bishoftu</option>
+                    <option value="Harar">Harar</option>
+                </select>
+            </div>
+
+            <br><br>
+            <div>
+                <label for="type">type</label>
+                <select class="dropdown" required>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Condominium">Condominium</option>
+                    <option value="House">House</option>
+                    <option value="Realstate">Realstate</option>
+                </select>
+            </div>
+
+
+            <br> <br>
+            <div>
+
+            </div>
+            <div>
+                <label for="price">Inter the price</label>
+                <input type="number" class="inputnumber" placeholder="Enter price" required>
+            </div>
+
+
+            <br> <br>
+
+            <div>
+                <label for="room"> Rooms </label>
+                <input type="number" class="room" placeholder="Enter room number" required>
+            </div>
+            <br><br>
+
+            <div>
+                <label for="area">Area</label>
+                <input type="number" class="area" placeholder="Area">
+            </div>
+            <br><br>
+            <div>
+
+                <label for="badroom">Bedroom</label>
+                <input type="text" class="badroom" placeholder="Badroom">
+            </div>
+            <br><br>
+            <div>
+                <label for="bathroom">Bathroom</label>
+                <input type="text" class="bathroom" placeholder="Bathroom">
+            </div>
+            <br><br>
+            <div>
+                <label for="floor">Floor</label>
+                <input type="number" class="floor" placeholder="floor">
+            </div>
+            <br><br>
+            <div>
+
+                <form>
+                    <input type="radio" name="Fur" value="furnished"> furnished<br>
+                    <input type="radio" name="Fur" value="unfurnished"> unfurnished<br>
+               
+                </form>
+                
+            </div>
+            <br><br>
+            <textarea name="massage" class="textarea" rows="5" cols="20">Enter extra information </textarea>
+            <br><br>
+
+
+
+            <input class="Upload" type="submit" value="Upload">
+            </div>
+
+
+
+        </form>
+
+
+    </body>
+
+    </html>
+    <script src="upload.js"></script>
+    <script>
+        window.onload = function() {
+          alert("Welcome to our website!");
+        };
+      </script>
+
+
+</body>
+
+</html>

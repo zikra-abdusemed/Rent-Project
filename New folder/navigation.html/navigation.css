@@ -1,0 +1,55 @@
+.navbar {
+overflow: hidden;
+background-color: antiquewhite;
+display: grid;
+grid-template-columns: repeat(50, 50fr);
+margin-top: 50px;
+margin-right: 10px;
+align-items: center;
+}
+
+.navbar a{
+    float:left ;
+    display:block ;
+    color: rgb(5, 5, 5);
+    text-align:center ;
+    padding: 30px 100px ;
+}
+.navbar a:hover{
+    background-color:lightblue ;
+    color: black;
+}
+/* .Services a{
+    
+    font-size: 50px;
+    padding: 161px; 
+    color: black;
+    text-decoration: none;
+} */
+.border-link {
+    border-top-width:70px; 
+   
+    border-bottom-style: dashed; 
+    border-left-width:100px;
+    
+    border: 1px solid black;
+   
+  }
+  
+   
+  
+
+
+figure{
+    position:relative;
+    text-align: center;
+}
+figcaption{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(red, green, blue, alpha);
+    color: rgb(80, 79, 79);
+    padding: 10px;
+    font-size: 70px;} 
