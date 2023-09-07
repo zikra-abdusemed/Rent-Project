@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up page for renters</title>
+    <link rel="stylesheet" href="signupT.css">
 </head>
+
 <body>
- <form >
-   <div>
-    FirstName
-    <input type="text" name="FName" class="FirstName" placeholder="FirstName" required autofocus>
-    <br><br>
-    LastName
-    <input type="text" name="LName" class="LastName" placeholder="LastName" required  autofocus >
-    <br><br>
-    Email
-    <input type="email" name="Email" class="Email" placeholder="Email" required autofocus >
-    <br><br>
-    Password
-    <input type="password" name="EName" class="Password" placeholder="Password" required autofocus>
-</div>
-    
-   
-    <input type="radio" name="gender" value="Female"> 
-    <label for="Female">Female</label>
-    <input type="radio" name="gender" value="Male">
-    <label for="Male">Male</label> 
-   
-        <button type="submit" class="btn">submit</button>
-        <a href="http://127.0.0.1:5503/FrontEndManual/rent.html" class="toSearch">Search</a>
+    <form>
+
+        <div class="TenantContainer">
+            <img class="mb-4" src="" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <label for="FirstName">FirstName</label>
+            <input type="text" class="tenant" id="FirstName" placeholder="FirstName"  required autofocus>
+            <br><br>
+            <label for="LastName">LastName</label>
+            <input type="text" class="tenant" id="LastName" placeholder="LastName"  required autofocus>
+            <br><br>
+            <label for="Email">Email</label>
+            <input type="email" class="tenant" id="Email" placeholder="Email"required autofocus>
+            <br><br>
+            <label for="Password">Password</label>
+            <input type="password" class="tenant" id="Password" placeholder="Password" required autofocus>
+
+             <br><br>
+
+            <input type="radio" id="female" name="gender" class="tenant" value="Female" required autofocus>
+            <label for="Female">Female</label>
+            <input type="radio" id="male" name="gender" class="tenant" value="Male" required autofocus>
+            <label for="Male">Male</label>
+        <br><br>
+        <button type="submit" class="btn">Signin</button>
+      <button id="toSearch" >Finish</button>   
+        
+    </div>
+
+    </form>
+    <div class="succses"></div>
   
-    
 
-</form>
-<div class="succses"></div>
-
-
-<script src="signup2.js"></script>
+    <script src="signup2.js"></script>
 
 
 </body>
+
 </html>

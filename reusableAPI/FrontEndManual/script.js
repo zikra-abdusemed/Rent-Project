@@ -357,15 +357,18 @@ fetch("http://localhost:3000/users")
         let moreInfo = document.getElementsByClassName('more-info')
 
         console.log(moreButtons.length)
-
+         console.log(moreInfo.length)
+           for(let z=0;z<moreInfo.length;z++){
+            console.log(moreInfo[z]);
+           
         for (let i = 0; i<moreButtons.length; i++){
            moreButtons[i].addEventListener('click',function(event){
             event.preventDefault();
             
-            moreInfo[i].textContent="All the extra information"
+            moreInfo[z].classList.toggle('Showmenu')
             // innerHTML=<div>all the extra information</div>
            }) 
-        }
+        }}
 
     })
 

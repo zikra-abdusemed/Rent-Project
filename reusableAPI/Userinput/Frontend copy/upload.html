@@ -14,12 +14,15 @@
     <head>
         <meta charset="UTF-8">
         <title>File Upload</title>
+        <link rel="stylesheet" href="upload.css">
     </head>
 
     <body>
-        <h1>File Upload</h1>
+       
         <!-- action="/upload" method="post"  enctype="multipart/form-data" -->
         <form>
+            <div class="UploadContainer">
+                <h1>File Upload</h1>
             <div>
                 <label for="file"> insert image </label>
                 <input type="file" class="image">
@@ -35,7 +38,7 @@
                 </select>
             </div>
 
-            <br><br>
+            
             <div>
                 <label for="type">type</label>
                 <select class="dropdown" required autofocus>
@@ -60,7 +63,7 @@
                 <label for="price">Inter the price</label>
                 <input type="number" class="inputnumber" placeholder="Enter price" required autofocus>
             </div>
-            <br><br>
+            
 
             <div>
                 <label for="area">Size</label>
@@ -76,23 +79,21 @@
                 <input type="number" class="room" placeholder="Enter room number" required autofocus>
             </div>
             <br><br>
+           
             <div>
-
                 <label for="bedroom">Bedroom</label>
-                <input type="text" class="bedroom" placeholder="Bedroom"  required autofocus>
-            </div>
-            <br><br>
-            <div>
-                <label for="bathroom">Bathroom</label>
-                <input type="text" class="bathroom" placeholder="Bathroom" required autofocus>
+                <input type="text" id="Bed" class="bedroom" placeholder="Bedroom"  required autofocus>
+            
+             <label for="bathroom">Bathroom</label>
+                <input type="text"  id="Bath" class="bathroom" placeholder="Bathroom" required autofocus>
             </div>
            
             <br><br>
             <div>
 
                 <form>
-                    <input type="radio" name="Fur" value="furnished"> furnished<br>
-                    <input type="radio" name="Fur" value="unfurnished"> unfurnished<br>
+                    <input type="radio" id="Furnich" name="Fur" value="furnished"> furnished<br>
+                    <input type="radio" id="notF" name="Fur" value="unfurnished"> unfurnished<br>
                
                 </form>
                 
@@ -106,7 +107,7 @@
             <button  class="Upload" type="submit" value="Upload">Upload</button>
             </div>
 
-
+        </div>
 
         </form>
 
